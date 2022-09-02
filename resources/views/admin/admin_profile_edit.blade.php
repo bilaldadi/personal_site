@@ -42,7 +42,9 @@
                     <div class="col-sm-12">
 
                             <label for="example-text-input" class="col-sm-2 col-form-label">New Profile Image</label><br>
-                            <img id="showImage" class="rounded-circle avatar-xl" src="{{ asset('backend/assets/images/small/img-5.jpg') }}" alt="Card image cap">
+                            <img id="showImage" class="rounded-circle avatar-xl" src="{{ (!empty($editData->profile_image)) ?
+                                                                    url('upload/admin_images/'.$editData->profile_image)
+                                                                    :url('upload/standart.png')}}" alt="Card image cap">
 
                     </div>
                 </div>
