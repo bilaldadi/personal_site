@@ -40,6 +40,12 @@
 
                 <div class="p-3">
 
+                    @if(count($errors))
+                        @foreach($errors->all() as $error)
+                            <p class="alert alert-danger alert-dismissible fade show ">{{ $error }}</p>
+                        @endforeach
+                    @endif
+
                     <form class="form-horizontal mt-3" method="POST" action="{{ route('register') }}">
                             @csrf
                         <div class="form-group mb-3 row">

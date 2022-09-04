@@ -14,7 +14,7 @@ use App\Http\Controllers\AdminController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend.index');
 });
 
 // Admin all routes
