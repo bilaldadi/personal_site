@@ -16,7 +16,7 @@
                     </a>
                 </li>
 
-
+                {{-- Home Slide --}}
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="ri-mail-send-line"></i>
@@ -27,6 +27,22 @@
 
                     </ul>
                 </li>
+                {{-- End Home Slide --}}
+
+                {{-- portfolio --}}
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="ri-mail-send-line"></i>
+                        <span>Portfolio All</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="{{ route('all.portfolio') }}">All Portfolio</a></li>
+                        <li><a href="{{ route('add.portfolio') }}">Add Portfolio</a></li>
+
+                    </ul>
+                </li>
+
+                {{--  End portfolio --}}
 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
