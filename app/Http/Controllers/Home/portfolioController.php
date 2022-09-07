@@ -123,7 +123,11 @@ class portfolioController extends Controller
         );
         return redirect()->route('all.portfolio')->with($notification);
 
-
-
     }// End Methode
+
+    public function PortfolioDetails($id){
+        $portfolio = protfolio::findOrFail($id);
+        return view('frontend.home_all.portfolio_details',compact('portfolio'));
+
+    }//End Methode
 }
